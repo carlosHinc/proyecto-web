@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  .welcome-page {
+    background: url('background-pattern.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .logo {
+    max-width: 200px;
+  }
+  
+  .welcome-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-primary {
+    background-color: #000;
+    border: none;
+  }
+  
+  .text-danger {
+    text-decoration: none;
+    color: #d9534f;
+  }
+  
+  .text-danger:hover {
+    text-decoration: underline;
+  }
+  

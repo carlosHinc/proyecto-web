@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clipkook - Registro Cliente</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="register-client.css">
+</head>
+<body>
+  <div class="container-fluid register-page d-flex flex-column justify-content-center align-items-center">
+    <div class="text-center mb-4">
+      <img src="logo.png" alt="Logo Clipkook" class="logo">
+    </div>
+    <div class="register-box">
+      <h2 class="text-center mb-4">Registro - Cliente</h2>
+      <form>
+        <div class="form-group">
+          <label for="client-name">Nombre</label>
+          <input type="text" id="client-name" class="form-control" placeholder="Nombre">
+        </div>
+        <div class="form-group">
+          <label for="client-lastname">Apellido</label>
+          <input type="text" id="client-lastname" class="form-control" placeholder="Apellido">
+        </div>
+        <div class="form-group">
+          <label for="client-phone">Número de celular</label>
+          <input type="tel" id="client-phone" class="form-control" placeholder="Número de celular">
+        </div>
+        <div class="form-group">
+          <label for="client-age">Edad</label>
+          <input type="number" id="client-age" class="form-control" placeholder="Edad">
+        </div>
+        <div class="form-group">
+          <label for="client-email">Correo electrónico</label>
+          <input type="email" id="client-email" class="form-control" placeholder="ejemplo@correo.com">
+        </div>
+        <div class="form-group">
+          <label for="client-password">Crear contraseña</label>
+          <input type="password" id="client-password" class="form-control" placeholder="Contraseña">
+        </div>
+        <div class="form-group">
+          <label for="client-confirm-password">Confirmar contraseña</label>
+          <input type="password" id="client-confirm-password" class="form-control" placeholder="Repite la contraseña">
+        </div>
+        <div class="form-group text-center">
+          <button type="submit" class="btn btn-primary btn-block">Registrar</button>
+        </div>
+        <div class="text-center">
+          <p>O regístrate</p>
+          <button class="btn btn-danger btn-block mb-2">Regístrate con Google</button>
+          <button class="btn btn-primary btn-block mb-2">Regístrate con Facebook</button>
+          <button class="btn btn-secondary btn-block">Regístrate con número celular</button>
+        </div>        
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Fondo claro */
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #007bff !important; /* Color de la barra de navegación */
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.text-center img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.text-center h4 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.list-group-item {
+    font-size: 1rem;
+    border: none;
+    padding: 10px 15px;
+}
+
+.list-group-item a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.list-group-item a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.list-group-item a.text-danger {
+    color: #dc3545;
+}
+
+.list-group-item a.text-danger:hover {
+    color: #a71d2a;
+}

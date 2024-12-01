@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clipkook - Iniciar Sesión</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+  <script>
+    // Función para validar el formulario
+    function validarFormulario() {
+      const email = document.getElementById("login-email").value;
+      const password = document.getElementById("login-password").value;
+      const loginButton = document.getElementById("login-button");
+
+      // Validamos si el correo y la contraseña son correctos
+      if (email === "barber@admin.com" && password === "1234") {
+        loginButton.disabled = false; // Habilitamos el botón de inicio de sesión
+      } else {
+        loginButton.disabled = true; // Deshabilitamos el botón si los datos no coinciden
+      }
+    }
+
+    // Función para redirigir al usuario a la página 'home.html' al hacer clic en el botón
+    function redirigir() {
+      window.location.href = "home.html"; // Redirige a home.html
+    }
+  </script>
+</head>
+<body>
+  <div class="container-fluid login-page d-flex flex-column justify-content-center align-items-center">
+    <div class="text-center mb-4">
+      <img src="images/logo.png" alt="Logo Clipkook" class="logo">
+    </div>
+    <div class="login-box">
+      <h2 class="text-center mb-4">Iniciar Sesión</h2>
+      <form onsubmit="event.preventDefault(); redirigir();">
+        <div class="form-group">
+          <label for="login-email">Correo Electrónico</label>
+          <input type="email" id="login-email" class="form-control" placeholder="ejemplo@correo.com" oninput="validarFormulario()">
+        </div>
+        <div class="form-group">
+          <label for="login-password">Contraseña</label>
+          <input type="password" id="login-password" class="form-control" placeholder="Contraseña" oninput="validarFormulario()">
+        </div>
+        <div class="form-group text-center">
+          <button type="submit" id="login-button" class="btn btn-primary btn-block" disabled>Iniciar Sesión</button>
+        </div>
+        <div class="text-center">
+          <p>O inicia sesión con:</p>
+          <button class="btn btn-danger btn-block mb-2">Google</button>
+          <button class="btn btn-primary btn-block mb-2">Facebook</button>
+          <button class="btn btn-secondary btn-block">Número Celular</button>
+        </div>
+        <div class="text-center mt-4">
+          <p>
+            ¿Olvidaste tu contraseña? <a href="recover-password.html">Recupérala aquí</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
